@@ -1,0 +1,65 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+li {
+    float: left;
+}
+li a:hover {
+    text-decoration: underline;
+}
+li a {
+    vertical-align: middle;
+    display: block;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+body {
+    display: grid;
+    font-family: arial,sans-serif;
+    font-size: small;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px; 
+}
+#toolbar-left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#toolbar-right {
+    text-align: right;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#center-logo {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#search-bar-container {
+    text-align: center;
+    padding-top: 30px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+#search-bar {
+    width: 400px;
+}
+#buttons-container {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
